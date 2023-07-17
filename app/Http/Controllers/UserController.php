@@ -26,7 +26,7 @@ class UserController extends Controller
             ->orWhere('stok', 'like', '%' . $keyword . '%')
             ->orWhere('kategori.nama', 'like', '%' . $keyword . '%')
             ->orWhere('foto', 'like', '%' . $keyword . '%')
-            ->get();
+            ->paginate(5);
         return view('home', compact('ar_produk', 'keyword'));
     }
 

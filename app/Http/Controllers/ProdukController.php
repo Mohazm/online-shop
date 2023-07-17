@@ -28,7 +28,7 @@ class ProdukController extends Controller
             ->orWhere('stok', 'like', '%' . $keyword . '%')
             ->orWhere('kategori.nama', 'like', '%' . $keyword . '%')
             ->orWhere('foto', 'like', '%' . $keyword . '%')
-            ->paginate(10);
+            ->paginate(5);
         return view('produk.index', compact('ar_produk', 'keyword'));
     }
 
@@ -131,7 +131,7 @@ class ProdukController extends Controller
             'foto' => '/img/' . $fileName
         ]);
     
-        return redirect('/produk');
+        return redirect('/Produk');
     }
 
     /**
@@ -203,6 +203,23 @@ class ProdukController extends Controller
             session()->flash('success', 'Product successfully removed!');
         }
     }
+
+    public function reduceStock($productId, $quantity)
+{
+    // Mengurangi stok produk berdasarkan ID produk
+    $product = Produk::findOrFail($productId);
+    
+    // Memastikan stok tersedia sebelum pengurangan
+    if ($product->stok >= $quantity) {
+        $product->stok -= $quantity;
+        $product->save();
+        
+        return true; // Mengembalikan nilai true jika pengurangan stok berhasil
+    }
+    
+    return false; // Mengembalikan nilai false jika stok tidak mencukupi
+}
+    
 }
 
 

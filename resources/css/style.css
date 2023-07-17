@@ -1,44 +1,20 @@
-body{
-    margin: 0;
-    background-color: #E0FBFC;
-}
+
 
 .home nav{
-    background-color:#98C1D9 ;
+    background-color:#d80000 ;
 }
 
 .home nav div div ul li a {
-    color:#3D5A80;
+    color:#ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
 .showcase section{
-   background: url(img1.png);
+   background: url('imgy/pertashop.png');
    height: 70vh;
    
 }
 
-/* login */
-
-.login{
-    align-items: center;
-    text-align: center;
-    margin-top: 30vh;
-    margin-bottom: 30vh;   
-    
-}
-
-.masuk{
-    box-shadow: rgb(10 10 10 / 20%) 0px 7px 29px 0px;
-    background-color: white;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-}
 
 .brend{
     margin-top: 25vh;
@@ -50,12 +26,165 @@ body{
 
 /* footer */
 .last{
-    background-color: #293240;
+    background-color: #650b0b;
     color: white;
     align-content: center;
     flex: auto;
     justify-content: center;
     
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #000000;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+body {
+    background-color: #f6f6f6;
+}
+.img_thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.img_thumbnail img {
+    width: 100%;
+}
+.img_thumbnail .caption{
+    margin: 7px;
+    text-align: center;
+}
+.dropdown{
+    float:right;
+    padding-right: 30px;
+}
+.btn{
+    border:0px;
+    margin:10px 0px;
+    box-shadow:none !important;
+}
+.dropdown .dropdown-menu{
+    padding:20px;
+    top:30px !important;
+    width:350px !important;
+    left:-110px !important;
+    box-shadow:0px 5px 30px black;
+}
+.total-header-section{
+    border-bottom:1px solid #d2d2d2;
+}
+.total-section p{
+    margin-bottom:20px;
+}
+.cart-detail{
+    padding:15px 0px;
+}
+.cart-detail-img img{
+    width:100%;
+    height:100%;
+    padding-left:15px;
+}
+.cart-detail-product p{
+    margin:0px;
+    color:#000;
+    font-weight:500;
+}
+.cart-detail .price{
+    font-size:12px;
+    margin-right:10px;
+    font-weight:500;
+}
+.cart-detail .count{
+    color:#000;
+}
+.checkout{
+    border-top:1px solid #d2d2d2;
+    padding-top: 15px;
+}
+.checkout .btn-primary{
+    border-radius:50px;
+ 
+}
+.dropdown-menu:before{
+    content: " ";
+    position:absolute;
+    top:-20px;
+    right:50px;
+    border:10px solid transparent;
+    border-bottom-color:#fff;
+}
+ 
+.productlist {
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
 }
 
 
