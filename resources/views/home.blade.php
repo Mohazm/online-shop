@@ -57,7 +57,7 @@
   <img class="d-block mx-auto mb-4" src="{{asset('img/pommini.png')}}" alt="" width="150" height="150">
   <h1 class="display-5 fw-bold text-body-emphasis">KEUNTUNGAN</h1>
   <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">Pertashop Pertamina</p>
+    <p class="lead mb-4">Sparepart SPBU Pertamina</p>
   </div>
 </div>
 

@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>ps</b>1998',
+    'logo' => '<b>Sparepart</b>SPBU',
     'logo_img' => 'vendor/adminlte/dist/img/pommini.png',
     'logo_img_class' => 'brand-image ',
     'logo_img_xl' => null,
@@ -253,7 +253,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
